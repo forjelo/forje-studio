@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Forje·studio — design & motion por sistema</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 327.7 327.7%22%3E%3Cdefs%3E%3Cmask id=%22fsBulb%22 maskUnits=%22userSpaceOnUse%22 x=%220%22 y=%220%22 width=%22327.7%22 height=%22327.7%22%3E%3Crect width=%22327.7%22 height=%22327.7%22 fill=%22%23fff%22/%3E%3Cpath d=%22M 101.1 101.1 C 100.2 102.1 99.3 103 98.4 104 C 97.6 105 96.7 105.9 95.9 107 C 95 108 94.2 109 93.5 110.1 C 92.7 111.1 91.9 112.2 91.2 113.3 C 90.5 114.4 89.8 115.5 89.1 116.6 C 88.4 117.7 87.8 118.9 87.2 120 C 86.5 121.2 86 122.3 85.4 123.5 C 84.8 124.7 84.3 125.9 83.8 127.1 C 83.3 128.3 82.8 129.5 82.4 130.8 C 82 132 81.5 133.3 81.2 134.5 C 80.8 135.8 80.4 137 80.1 138.3 C 79.8 139.6 79.5 140.8 79.3 142.1 C 79 143.4 78.8 144.7 78.6 146 C 78.4 147.3 78.2 148.6 78.1 149.9 C 78 151.2 77.9 152.5 77.8 153.8 C 77.8 155.1 77.7 156.4 77.7 157.7 C 77.7 159.1 77.8 160.4 77.8 161.7 C 77.9 163 78 164.3 78.1 165.6 C 78.2 166.9 78.4 168.2 78.6 169.5 C 78.8 170.8 79 172.1 79.3 173.4 C 79.5 174.6 79.8 175.9 80.1 177.2 C 80.4 178.5 80.8 179.7 81.2 181 C 81.5 182.2 82 183.5 82.4 184.7 C 82.8 185.9 83.3 187.2 83.8 188.4 C 84.3 189.6 84.8 190.8 85.4 192 C 86 193.2 86.5 194.3 87.2 195.5 C 87.8 196.6 88.4 197.8 89.1 198.9 C 89.8 200 90.5 201.1 91.2 202.2 C 91.9 203.3 92.7 204.4 93.5 205.4 C 94.2 206.5 95 207.5 95.9 208.5 C 96.7 209.5 97.6 210.5 98.4 211.5 C 99.3 212.5 100.2 213.4 101.1 214.4 C 116.2 229.4 138.2 232.6 157.7 235.5 C 161 236 164.3 236.5 167.5 237 C 173.9 238.1 179.7 240.4 185.1 243.9 C 186.3 244.7 187.5 245.3 188.8 245.9 C 190.1 246.5 191.4 246.9 192.7 247.3 C 194.1 247.6 195.5 247.9 196.9 248 C 198.3 248.1 199.7 248.1 201.1 247.9 C 202.5 247.8 203.8 247.6 205.2 247.2 C 206.5 246.8 207.9 246.4 209.1 245.8 C 210.4 245.2 211.6 244.5 212.8 243.7 C 213.9 242.9 215 242 216 241 L 241 216 C 242 215 242.9 213.9 243.7 212.8 C 244.5 211.6 245.2 210.4 245.8 209.1 C 246.3 207.9 246.8 206.6 247.2 205.2 C 247.5 203.8 247.8 202.5 247.9 201.1 C 248 199.7 248.1 198.3 247.9 196.9 C 247.8 195.5 247.6 194.1 247.3 192.8 C 246.9 191.4 246.5 190.1 245.9 188.8 C 245.3 187.5 244.7 186.3 243.9 185.2 C 240.4 179.8 238.1 173.9 237 167.5 C 236.4 164.3 236 161 235.5 157.7 C 232.6 138.2 229.4 116.2 214.4 101.1 C 213.4 100.2 212.5 99.3 211.5 98.4 C 210.5 97.5 209.6 96.7 208.5 95.9 C 207.5 95 206.5 94.2 205.4 93.4 C 204.4 92.7 203.3 91.9 202.2 91.2 C 201.1 90.5 200 89.8 198.9 89.1 C 197.8 88.4 196.6 87.8 195.5 87.2 C 194.3 86.5 193.2 86 192 85.4 C 190.8 84.8 189.6 84.3 188.4 83.8 C 187.2 83.3 185.9 82.8 184.7 82.4 C 183.5 82 182.2 81.5 181 81.2 C 179.7 80.8 178.5 80.4 177.2 80.1 C 175.9 79.8 174.6 79.5 173.4 79.3 C 172.1 79 170.8 78.8 169.5 78.6 C 168.2 78.4 166.9 78.2 165.6 78.1 C 164.3 78 163 77.9 161.7 77.8 C 160.4 77.8 159.1 77.7 157.8 77.7 C 156.4 77.7 155.1 77.8 153.8 77.8 C 152.5 77.9 151.2 78 149.9 78.1 C 148.6 78.2 147.3 78.4 146 78.6 C 144.7 78.8 143.4 79 142.1 79.3 C 140.8 79.5 139.6 79.8 138.3 80.1 C 137 80.4 135.8 80.8 134.5 81.2 C 133.3 81.5 132 82 130.8 82.4 C 129.6 82.8 128.3 83.3 127.1 83.8 C 125.9 84.3 124.7 84.8 123.5 85.4 C 122.3 86 121.2 86.5 120 87.2 C 118.9 87.8 117.7 88.4 116.6 89.1 C 115.5 89.8 114.4 90.5 113.3 91.2 C 112.2 91.9 111.1 92.7 110.1 93.4 C 109 94.2 108 95 107 95.9 C 105.9 96.7 105 97.5 104 98.4 C 103 99.3 102.1 100.2 101.1 101.1 Z M 101.1 101.1 %22 fill=%22%23000%22/%3E%3Cpath d=%22M 253.3 217.9 L 217.9 253.3 C 217.7 253.5 217.5 253.8 217.3 254 C 217.1 254.3 216.9 254.6 216.8 254.9 C 216.7 255.2 216.6 255.5 216.5 255.8 C 216.5 256.2 216.4 256.5 216.4 256.8 C 216.4 257.1 216.5 257.5 216.5 257.8 C 216.6 258.1 216.7 258.4 216.8 258.7 C 216.9 259 217.1 259.3 217.3 259.6 C 217.5 259.9 217.7 260.1 217.9 260.4 C 218.1 260.6 218.4 260.8 218.7 261 C 218.9 261.2 219.2 261.3 219.5 261.4 C 219.8 261.6 220.1 261.7 220.5 261.7 C 220.8 261.8 221.1 261.8 221.4 261.8 C 221.8 261.8 222.1 261.8 222.4 261.7 C 222.7 261.7 223.1 261.6 223.4 261.4 C 223.7 261.3 223.9 261.2 224.2 261 C 224.5 260.8 224.7 260.6 225 260.4 L 260.4 225 C 260.6 224.7 260.8 224.5 261 224.2 C 261.2 223.9 261.3 223.7 261.4 223.4 C 261.6 223 261.7 222.7 261.7 222.4 C 261.8 222.1 261.8 221.8 261.8 221.4 C 261.8 221.1 261.8 220.8 261.7 220.5 C 261.7 220.1 261.6 219.8 261.4 219.5 C 261.3 219.2 261.2 218.9 261 218.7 C 260.8 218.4 260.6 218.1 260.4 217.9 C 260.1 217.7 259.9 217.5 259.6 217.3 C 259.3 217.1 259 216.9 258.7 216.8 C 258.4 216.7 258.1 216.6 257.8 216.5 C 257.5 216.5 257.2 216.4 256.8 216.4 C 256.5 216.4 256.2 216.5 255.8 216.5 C 255.5 216.6 255.2 216.7 254.9 216.8 C 254.6 216.9 254.3 217.1 254 217.3 C 253.8 217.5 253.5 217.7 253.3 217.9 Z M 253.3 217.9 %22 fill=%22%23000%22/%3E%3Cpath d=%22M 267.4 232.1 L 232.1 267.4 C 231.8 267.7 231.6 267.9 231.4 268.2 C 231.2 268.5 231.1 268.8 231 269.1 C 230.8 269.4 230.8 269.7 230.7 270 C 230.6 270.3 230.6 270.6 230.6 271 C 230.6 271.3 230.6 271.6 230.7 271.9 C 230.8 272.3 230.8 272.6 231 272.9 C 231.1 273.2 231.2 273.5 231.4 273.8 C 231.6 274 231.8 274.3 232.1 274.5 C 232.3 274.7 232.5 275 232.8 275.1 C 233.1 275.3 233.4 275.5 233.7 275.6 C 234 275.7 234.3 275.8 234.6 275.9 C 234.9 275.9 235.3 276 235.6 276 C 235.9 276 236.2 275.9 236.6 275.9 C 236.9 275.8 237.2 275.7 237.5 275.6 C 237.8 275.5 238.1 275.3 238.4 275.1 C 238.6 275 238.9 274.7 239.1 274.5 L 274.5 239.1 C 274.7 238.9 275 238.6 275.1 238.4 C 275.3 238.1 275.5 237.8 275.6 237.5 C 275.7 237.2 275.8 236.9 275.9 236.6 C 275.9 236.2 276 235.9 276 235.6 C 276 235.3 275.9 234.9 275.9 234.6 C 275.8 234.3 275.7 234 275.6 233.7 C 275.5 233.4 275.3 233.1 275.1 232.8 C 275 232.5 274.7 232.3 274.5 232.1 C 274.3 231.8 274 231.6 273.8 231.4 C 273.5 231.2 273.2 231.1 272.9 231 C 272.6 230.8 272.3 230.7 272 230.7 C 271.6 230.6 271.3 230.6 271 230.6 C 270.6 230.6 270.3 230.6 270 230.7 C 269.7 230.7 269.4 230.8 269.1 231 C 268.8 231.1 268.5 231.2 268.2 231.4 C 267.9 231.6 267.7 231.8 267.4 232.1 Z M 267.4 232.1 %22 fill=%22%23000%22/%3E%3Cpath d=%22M 274.5 253.3 L 253.3 274.5 C 253.1 274.7 252.8 275 252.7 275.3 C 252.5 275.5 252.3 275.8 252.2 276.1 C 252.1 276.4 252 276.8 251.9 277.1 C 251.9 277.4 251.8 277.7 251.8 278.1 C 251.8 278.4 251.9 278.7 251.9 279 C 252 279.3 252.1 279.7 252.2 280 C 252.3 280.3 252.5 280.6 252.7 280.8 C 252.8 281.1 253.1 281.4 253.3 281.6 C 253.5 281.8 253.8 282 254 282.2 C 254.3 282.4 254.6 282.5 254.9 282.7 C 255.2 282.8 255.5 282.9 255.8 283 C 256.2 283 256.5 283.1 256.8 283.1 C 257.2 283.1 257.5 283 257.8 283 C 258.1 282.9 258.4 282.8 258.7 282.7 C 259 282.5 259.3 282.4 259.6 282.2 C 259.9 282 260.1 281.8 260.4 281.6 L 281.6 260.4 C 281.8 260.1 282 259.9 282.2 259.6 C 282.4 259.3 282.6 259 282.7 258.7 C 282.8 258.4 282.9 258.1 283 257.8 C 283 257.5 283.1 257.1 283.1 256.8 C 283.1 256.5 283 256.2 283 255.8 C 282.9 255.5 282.8 255.2 282.7 254.9 C 282.6 254.6 282.4 254.3 282.2 254 C 282 253.8 281.8 253.5 281.6 253.3 C 281.4 253.1 281.1 252.8 280.8 252.7 C 280.6 252.5 280.3 252.3 280 252.2 C 279.7 252.1 279.4 252 279 251.9 C 278.7 251.8 278.4 251.8 278.1 251.8 C 277.7 251.8 277.4 251.8 277.1 251.9 C 276.8 252 276.4 252.1 276.1 252.2 C 275.8 252.3 275.5 252.5 275.3 252.7 C 275 252.8 274.7 253.1 274.5 253.3 Z M 274.5 253.3 %22 fill=%22%23000%22/%3E%3C/mask%3E%3C/defs%3E%3Cpath d=%22M 166.1 0 L 161.4 0 C 72.3 0 0 72.3 0 161.5 L 0 166.2 C 0 255.3 72.3 327.6 161.5 327.6 L 326.8 327.6 C 327.3 327.6 327.6 327.2 327.6 326.8 L 327.6 161.5 C 327.6 72.3 255.3 0 166.1 0 Z M 166.1 0 %22 fill=%22%23F5620F%22 mask=%22url%28%23fsBulb%29%22/%3E%3C/svg%3E">
+
+<!-- catálogo de fontes (lib/fonts.js referencia estas famílias) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link id="gfonts" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Bebas+Neue&family=DM+Serif+Display&family=Fraunces:opsz,wght@9..144,400..900&family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400..800&family=JetBrains+Mono:wght@400..800&family=Manrope:wght@400..800&family=Outfit:wght@400..900&family=Playfair+Display:wght@400..900&family=Sora:wght@400..800&family=Space+Grotesk:wght@400..700&family=DM+Sans:opsz,wght@9..40,300..700&family=DM+Mono:wght@300;400;500&family=Syne:wght@400..800&family=Unbounded:wght@400..900&family=Work+Sans:wght@400..800&display=swap">
+
+<link rel="stylesheet" href="css/app.css">
+
+<!-- ARTCSS:BEGIN — bloco gerado de css/art.css (rode ./build.sh após editar) -->
+<style id="artcss">
+/* =====================================================
+   FORJE·studio — art.css
+   Tokens da marca + componentes + biblioteca de motion.
+   Este arquivo inteiro é embutido nos exports HTML.
+   ===================================================== */
+.art{position:relative;overflow:hidden;background:var(--b-bg);color:var(--b-fg);
+  font-family:var(--fb);font-size:calc(var(--u)*1px);line-height:1.2;-webkit-font-smoothing:antialiased}
+.art *{margin:0;box-sizing:border-box}
+.art .fh{font-family:var(--fh)}
+.art .fm{font-family:var(--fm)}
+.art .abs{position:absolute}
+.art img{display:block}
+.art svg.ic{width:1em;height:1em;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;display:block}
+
+/* ---------- BIBLIOTECA DE ANIMAÇÕES (entrada) ---------- */
+@keyframes kFadeUp{from{opacity:0;transform:translateY(calc(var(--u)*4px))}}
+@keyframes kFade{from{opacity:0}}
+@keyframes kClip{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes kClipUp{from{clip-path:inset(100% 0 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes kScale{from{opacity:0;transform:scale(.82)}}
+@keyframes kBlur{from{opacity:0;filter:blur(calc(var(--u)*1.6px))}}
+@keyframes kLine{from{transform:scaleX(0)}}
+@keyframes kLineY{from{transform:scaleY(0)}}
+@keyframes kLetter{from{opacity:0;transform:translateY(1.1em) rotate(5deg)}to{opacity:1;transform:none}}
+
+/* tipografia flexível (ajuste pós-S6):
+   .lw — invólucro de palavra do modo letters (quebra só nos espaços)
+   text-wrap:balance — linhas naturais redistribuídas com equilíbrio
+   .tflex — texto redimensionado pelo usuário: os <br> fixos viram
+   quebras flexíveis e o conteúdo reflui para ocupar o novo box */
+.art .lw{display:inline-block}
+.art h1{text-wrap:balance}
+.art .tflex{white-space:normal;text-wrap:balance}
+.art .tflex br{display:none}
+@keyframes kPop{0%{opacity:0;transform:scale(.4)}70%{transform:scale(1.06)}100%{opacity:1}}
+@keyframes kSlideL{from{opacity:0;transform:translateX(calc(var(--u)*6px))}}
+@keyframes kSlideR{from{opacity:0;transform:translateX(calc(var(--u)*-6px))}}
+@keyframes kRise{from{opacity:0;transform:translateY(calc(var(--u)*10px)) scale(.94)}}
+@keyframes kDraw{from{stroke-dashoffset:var(--dash,320)}to{stroke-dashoffset:0}}
+@keyframes kTrace{to{stroke-dashoffset:-260}}
+@keyframes kUnfold{from{opacity:0;transform:perspective(900px) rotateX(-86deg)}}
+@keyframes kRoll{from{opacity:0;transform:translateX(calc(var(--u)*-9px)) rotate(-150deg)}}
+@keyframes kElastic{0%{opacity:0;transform:scaleX(.2)}55%{opacity:1;transform:scaleX(1.12)}75%{transform:scaleX(.96)}100%{opacity:1}}
+/* ---------- ambientes (loop) ---------- */
+@keyframes kFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(calc(var(--u)*-1.4px))}}
+@keyframes kOrbit{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(calc(var(--u)*4px),calc(var(--u)*-3px)) scale(1.08)}66%{transform:translate(calc(var(--u)*-3px),calc(var(--u)*3px)) scale(.95)}}
+@keyframes kSpin{to{transform:rotate(360deg)}}
+@keyframes kPulse{0%,100%{opacity:.55}50%{opacity:1}}
+@keyframes kShimmer{from{background-position:200% 0}to{background-position:-200% 0}}
+/* novas entradas de elemento/componente */
+@keyframes kFlipX{from{opacity:0;transform:perspective(900px) rotateX(64deg)}}
+@keyframes kFlipY{from{opacity:0;transform:perspective(900px) rotateY(-56deg)}}
+@keyframes kBounce{0%{opacity:0;transform:translateY(calc(var(--u)*-9px))}55%{opacity:1;transform:translateY(calc(var(--u)*1.6px))}78%{transform:translateY(calc(var(--u)*-0.7px))}100%{opacity:1}}
+@keyframes kSwing{from{opacity:0;transform:rotate(-9deg)}60%{transform:rotate(3deg)}to{opacity:1}}
+@keyframes kRotIn{from{opacity:0;transform:rotate(-10deg) scale(.86)}}
+@keyframes kZoomIn{from{opacity:0;transform:scale(1.55)}}
+@keyframes kBlurUp{from{opacity:0;filter:blur(calc(var(--u)*1.8px));transform:translateY(calc(var(--u)*4px))}}
+@keyframes kSkew{from{opacity:0;transform:skewX(-14deg) translateX(calc(var(--u)*-6px))}}
+@keyframes kTrack{from{opacity:0;letter-spacing:.4em}}
+@keyframes kIris{from{clip-path:circle(0% at 50% 50%)}to{clip-path:circle(120% at 50% 50%)}}
+@keyframes kWobble{0%,100%{transform:rotate(-1.6deg)}50%{transform:rotate(1.6deg)}}
+@keyframes kBreathe{0%,100%{transform:scale(1)}50%{transform:scale(1.045)}}
+
+/* ---------- saídas de cena ---------- */
+@keyframes kExitFade{to{opacity:0}}
+@keyframes kExitWipe{to{clip-path:inset(0 0 100% 0)}}
+@keyframes kExitWipeDown{to{clip-path:inset(100% 0 0 0)}}
+@keyframes kExitWipeL{to{clip-path:inset(0 100% 0 0)}}
+@keyframes kExitWipeR{to{clip-path:inset(0 0 0 100%)}}
+@keyframes kExitZoom{to{opacity:0;transform:scale(1.1);filter:blur(calc(var(--u)*1px))}}
+@keyframes kExitZoomOut{to{opacity:0;transform:scale(.86)}}
+@keyframes kExitSlide{to{opacity:0;transform:translateY(calc(var(--u)*-6px))}}
+@keyframes kExitSlideDown{to{opacity:0;transform:translateY(calc(var(--u)*6px))}}
+@keyframes kExitSlideL{to{opacity:0;transform:translateX(calc(var(--u)*-8px))}}
+@keyframes kExitSlideR{to{opacity:0;transform:translateX(calc(var(--u)*8px))}}
+@keyframes kExitBlur{to{opacity:0;filter:blur(calc(var(--u)*2.2px))}}
+@keyframes kExitIris{from{clip-path:circle(120% at 50% 50%)}to{clip-path:circle(0% at 50% 50%)}}
+@keyframes kExitFlip{to{opacity:0;transform:perspective(1200px) rotateY(26deg) scale(.96)}}
+@keyframes kExitSpin{to{opacity:0;transform:rotate(7deg) scale(.9)}}
+
+/* ---------- entradas de cena ---------- */
+@keyframes kEnterFade{from{opacity:0}}
+@keyframes kEnterWipe{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes kEnterWipeUp{from{clip-path:inset(100% 0 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes kEnterWipeDown{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes kEnterZoom{from{opacity:0;transform:scale(.92)}}
+@keyframes kEnterZoomOut{from{opacity:0;transform:scale(1.1)}}
+@keyframes kEnterSlideL{from{opacity:0;transform:translateX(calc(var(--u)*9px))}}
+@keyframes kEnterSlideR{from{opacity:0;transform:translateX(calc(var(--u)*-9px))}}
+@keyframes kEnterSlideUp{from{opacity:0;transform:translateY(calc(var(--u)*9px))}}
+@keyframes kEnterSlideDown{from{opacity:0;transform:translateY(calc(var(--u)*-9px))}}
+@keyframes kEnterBlur{from{opacity:0;filter:blur(calc(var(--u)*2.2px))}}
+@keyframes kEnterFlip{from{opacity:0;transform:perspective(1200px) rotateY(-24deg)}}
+@keyframes kEnterSpin{from{opacity:0;transform:rotate(-7deg) scale(.94)}}
+
+/* ---------- saídas de item composto (fim da cena, no vídeo) ---------- */
+@keyframes kXFade{to{opacity:0}}
+@keyframes kXFall{to{opacity:0;transform:translateY(calc(var(--u)*5px))}}
+@keyframes kXRise{to{opacity:0;transform:translateY(calc(var(--u)*-5px))}}
+@keyframes kXShrink{to{opacity:0;transform:scale(.55)}}
+@keyframes kXBlur{to{opacity:0;filter:blur(calc(var(--u)*1.8px))}}
+@keyframes kXSlideL{to{opacity:0;transform:translateX(calc(var(--u)*-7px))}}
+@keyframes kXSlideR{to{opacity:0;transform:translateX(calc(var(--u)*7px))}}
+@keyframes kXSpin{to{opacity:0;transform:rotate(12deg) scale(.8)}}
+
+/* aplicação: elementos com data-anim animam quando .art está em .play */
+.art [data-anim]{--d:0s;--dur:.9s}
+.art.play [data-anim=fade]{animation:kFade var(--dur) ease-out var(--d) both}
+.art.play [data-anim=fade-up]{animation:kFadeUp var(--dur) cubic-bezier(.2,.8,.2,1) var(--d) both}
+.art.play [data-anim=clip]{animation:kClip var(--dur) cubic-bezier(.7,0,.2,1) var(--d) backwards}
+.art.play [data-anim=clip-up]{animation:kClipUp var(--dur) cubic-bezier(.7,0,.2,1) var(--d) backwards}
+.art.play [data-anim=scale]{animation:kScale var(--dur) cubic-bezier(.2,.8,.2,1) var(--d) both}
+.art.play [data-anim=blur]{animation:kBlur var(--dur) ease-out var(--d) both}
+.art.play [data-anim=line]{animation:kLine var(--dur) cubic-bezier(.7,0,.2,1) var(--d) both;transform-origin:left}
+.art.play [data-anim=line-y]{animation:kLineY var(--dur) cubic-bezier(.7,0,.2,1) var(--d) both;transform-origin:top}
+.art.play [data-anim=pop]{animation:kPop .7s cubic-bezier(.2,.8,.2,1) var(--d) both}
+.art.play [data-anim=slide-l]{animation:kSlideL var(--dur) cubic-bezier(.2,.8,.2,1) var(--d) both}
+.art.play [data-anim=slide-r]{animation:kSlideR var(--dur) cubic-bezier(.2,.8,.2,1) var(--d) both}
+.art.play [data-anim=rise]{animation:kRise var(--dur) cubic-bezier(.2,.8,.2,1) var(--d) both}
+.art.play [data-anim=letters] .ltr{opacity:0;animation:kLetter .6s cubic-bezier(.2,.8,.2,1) var(--ld) both}
+.art.play [data-anim=draw] :is(path,circle,rect,line,polyline,ellipse){stroke-dasharray:var(--dash,320);animation:kDraw calc(var(--dur)*1.4) cubic-bezier(.7,0,.2,1) var(--d) both}
+/* família de transformação SVG (irmãs da draw) */
+.art.play [data-anim=sketch] :is(path,circle,rect,line,polyline,ellipse){stroke-dasharray:var(--dash,320);animation:kDraw calc(var(--dur)*1.6) steps(9,end) var(--d) both}
+.art.play [data-anim=ink] :is(path,circle,rect,line,polyline,ellipse){stroke-dasharray:var(--dash,320);animation:kDraw calc(var(--dur)*1.5) cubic-bezier(.7,0,.2,1) var(--d) both}
+.art.play [data-anim=ink]{animation:kFade calc(var(--dur)*2) ease var(--d) backwards}
+.art.play [data-anim=trace] :is(path,circle,rect,line,polyline,ellipse){stroke-dasharray:7 6;animation:kTrace 2.6s linear var(--d) infinite}
+.art.play [data-anim=unfold]{animation:kUnfold var(--dur) cubic-bezier(.22,1,.36,1) var(--d) backwards;transform-origin:50% 0}
+.art.play [data-anim=roll]{animation:kRoll calc(var(--dur)*1.15) cubic-bezier(.22,1,.36,1) var(--d) backwards}
+.art.play [data-anim=elastic]{animation:kElastic calc(var(--dur)*1.2) cubic-bezier(.22,1,.36,1) var(--d) backwards;transform-origin:0 50%}
+.art.play [data-anim=float]{animation:kFloat 5s ease-in-out var(--d) infinite;animation-composition:add}
+.art.play [data-anim=orbit]{animation:kOrbit 9s ease-in-out var(--d) infinite;animation-composition:add}
+.art.play [data-anim=spin]{animation:kSpin 24s linear infinite;animation-composition:add}
+.art.play [data-anim=pulse]{animation:kPulse 3s ease-in-out var(--d) infinite}
+.art.play [data-anim=flip-x]{animation:kFlipX var(--dur) cubic-bezier(.2,.8,.2,1) var(--d) both;transform-origin:50% 100%}
+.art.play [data-anim=flip-y]{animation:kFlipY var(--dur) cubic-bezier(.2,.8,.2,1) var(--d) both}
+.art.play [data-anim=bounce]{animation:kBounce calc(var(--dur)*1.1) cubic-bezier(.2,.8,.2,1) var(--d) both}
+.art.play [data-anim=swing]{animation:kSwing var(--dur) cubic-bezier(.2,.8,.2,1) var(--d) both;transform-origin:50% 0}
+.art.play [data-anim=rotate]{animation:kRotIn var(--dur) cubic-bezier(.2,.8,.2,1) var(--d) both}
+.art.play [data-anim=zoom-in]{animation:kZoomIn var(--dur) cubic-bezier(.2,.8,.2,1) var(--d) both}
+.art.play [data-anim=blur-up]{animation:kBlurUp var(--dur) ease-out var(--d) both}
+.art.play [data-anim=skew]{animation:kSkew var(--dur) cubic-bezier(.2,.8,.2,1) var(--d) both}
+.art.play [data-anim=tracking]{animation:kTrack calc(var(--dur)*1.3) ease-out var(--d) both}
+.art.play [data-anim=iris]{animation:kIris var(--dur) cubic-bezier(.7,0,.2,1) var(--d) backwards}
+.art.play [data-anim=type]{animation:kClip calc(var(--dur)*1.7) steps(20,end) var(--d) backwards}
+.art.play [data-anim=wobble]{animation:kWobble 4s ease-in-out var(--d) infinite;animation-composition:add}
+.art.play [data-anim=breathe]{animation:kBreathe 4.5s ease-in-out var(--d) infinite;animation-composition:add}
+@media (prefers-reduced-motion:reduce){
+  .art.play [data-anim]{animation:none!important}
+  .art.play [data-anim=letters] .ltr{opacity:1;animation:none!important}
+}
+
+/* ---------- camadas de cena (motion composer) ---------- */
+.art .scenelayer{position:absolute;inset:0}
+/* entrada da cena (classe enter-* aplicada ao montar a camada) */
+.art.play .scenelayer.enter-fade{animation:kEnterFade var(--edur,.55s) ease-out both}
+.art.play .scenelayer.enter-wipe{animation:kEnterWipe var(--edur,.55s) cubic-bezier(.7,0,.2,1) both}
+.art.play .scenelayer.enter-wipe-up{animation:kEnterWipeUp var(--edur,.55s) cubic-bezier(.7,0,.2,1) both}
+.art.play .scenelayer.enter-wipe-down{animation:kEnterWipeDown var(--edur,.55s) cubic-bezier(.7,0,.2,1) both}
+.art.play .scenelayer.enter-zoom{animation:kEnterZoom var(--edur,.55s) cubic-bezier(.2,.8,.2,1) both}
+.art.play .scenelayer.enter-zoom-out{animation:kEnterZoomOut var(--edur,.55s) cubic-bezier(.2,.8,.2,1) both}
+.art.play .scenelayer.enter-slide-l{animation:kEnterSlideL var(--edur,.55s) cubic-bezier(.2,.8,.2,1) both}
+.art.play .scenelayer.enter-slide-r{animation:kEnterSlideR var(--edur,.55s) cubic-bezier(.2,.8,.2,1) both}
+.art.play .scenelayer.enter-slide-up{animation:kEnterSlideUp var(--edur,.55s) cubic-bezier(.2,.8,.2,1) both}
+.art.play .scenelayer.enter-slide-down{animation:kEnterSlideDown var(--edur,.55s) cubic-bezier(.2,.8,.2,1) both}
+.art.play .scenelayer.enter-blur{animation:kEnterBlur var(--edur,.55s) ease-out both}
+.art.play .scenelayer.enter-iris{animation:kIris var(--edur,.6s) cubic-bezier(.7,0,.2,1) both}
+.art.play .scenelayer.enter-flip{animation:kEnterFlip var(--edur,.6s) cubic-bezier(.2,.8,.2,1) both}
+.art.play .scenelayer.enter-spin{animation:kEnterSpin var(--edur,.55s) cubic-bezier(.2,.8,.2,1) both}
+/* saída da cena — mesma especificidade da entrada e declarada DEPOIS: sempre vence */
+.art.play .scenelayer.exit-fade{animation:kExitFade var(--xdur,.45s) ease both}
+.art.play .scenelayer.exit-wipe{animation:kExitWipe var(--xdur,.45s) cubic-bezier(.7,0,.2,1) both}
+.art.play .scenelayer.exit-wipe-down{animation:kExitWipeDown var(--xdur,.45s) cubic-bezier(.7,0,.2,1) both}
+.art.play .scenelayer.exit-wipe-l{animation:kExitWipeL var(--xdur,.45s) cubic-bezier(.7,0,.2,1) both}
+.art.play .scenelayer.exit-wipe-r{animation:kExitWipeR var(--xdur,.45s) cubic-bezier(.7,0,.2,1) both}
+.art.play .scenelayer.exit-zoom{animation:kExitZoom var(--xdur,.45s) ease both}
+.art.play .scenelayer.exit-zoom-out{animation:kExitZoomOut var(--xdur,.45s) ease both}
+.art.play .scenelayer.exit-slide{animation:kExitSlide var(--xdur,.45s) ease both}
+.art.play .scenelayer.exit-slide-down{animation:kExitSlideDown var(--xdur,.45s) ease both}
+.art.play .scenelayer.exit-slide-l{animation:kExitSlideL var(--xdur,.45s) ease both}
+.art.play .scenelayer.exit-slide-r{animation:kExitSlideR var(--xdur,.45s) ease both}
+.art.play .scenelayer.exit-blur{animation:kExitBlur var(--xdur,.45s) ease both}
+.art.play .scenelayer.exit-iris{animation:kExitIris var(--xdur,.5s) cubic-bezier(.7,0,.2,1) both}
+.art.play .scenelayer.exit-flip{animation:kExitFlip var(--xdur,.5s) ease both}
+.art.play .scenelayer.exit-spin{animation:kExitSpin var(--xdur,.45s) ease both}
+/* saída individual de item composto quando a cena entra em .exiting */
+.art.play .scenelayer.exiting .compitem[data-xanim=fade]{animation:kXFade .45s ease both}
+.art.play .scenelayer.exiting .compitem[data-xanim=fall]{animation:kXFall .45s ease both}
+.art.play .scenelayer.exiting .compitem[data-xanim=rise]{animation:kXRise .45s ease both}
+.art.play .scenelayer.exiting .compitem[data-xanim=shrink]{animation:kXShrink .45s cubic-bezier(.6,0,.8,.4) both}
+.art.play .scenelayer.exiting .compitem[data-xanim=blur]{animation:kXBlur .45s ease both}
+.art.play .scenelayer.exiting .compitem[data-xanim=slide-l]{animation:kXSlideL .45s ease both}
+.art.play .scenelayer.exiting .compitem[data-xanim=slide-r]{animation:kXSlideR .45s ease both}
+.art.play .scenelayer.exiting .compitem[data-xanim=spin]{animation:kXSpin .45s ease both}
+
+/* ---------- COMPONENTES REUTILIZÁVEIS ---------- */
+.art .kicker{font-family:var(--fm,var(--fb));font-size:calc(var(--u)*2.4px);letter-spacing:.22em;text-transform:uppercase;font-weight:600;opacity:.92}
+.art .bar{height:calc(var(--u)*1.1px);background:var(--b-ac);border-radius:99px}
+.art .cta{display:inline-flex;align-items:center;gap:.5em;background:var(--b-ac);color:var(--b-bg);
+  font-weight:800;font-size:calc(var(--u)*2.9px);padding:.75em 1.5em;border-radius:calc(var(--b-r)*1px)}
+.art .handle{font-family:var(--fm,var(--fb));font-size:calc(var(--u)*2.2px);opacity:.75;letter-spacing:.06em}
+.art .logo{height:calc(var(--u)*6px);width:auto;object-fit:contain}
+.art .logotype{font-family:var(--fh);font-weight:800;font-size:calc(var(--u)*3.4px);letter-spacing:.02em}
+.art .counter{font-family:var(--fm,var(--fb));font-size:calc(var(--u)*2.2px);opacity:.7;letter-spacing:.1em}
+.art .iconbox{display:grid;place-items:center;background:color-mix(in srgb,var(--b-ac) 16%,transparent);
+  color:var(--b-ac);border:calc(var(--u)*0.22px) solid color-mix(in srgb,var(--b-ac) 45%,transparent);
+  border-radius:calc(var(--b-r)*1px)}
+.art .imgw{position:relative;overflow:hidden}
+.art .imgw>img{width:100%;height:100%;object-fit:cover}
+.art .mask-circle{border-radius:50%}
+.art .mask-blob{clip-path:polygon(var(--blob,50% 0%, 84% 12%, 100% 43%, 92% 78%, 62% 100%, 27% 96%, 4% 72%, 0% 38%, 18% 9%))}
+.art .mask-arch{border-radius:50% 50% calc(var(--b-r)*1px) calc(var(--b-r)*1px) / 38% 38% calc(var(--b-r)*1px) calc(var(--b-r)*1px)}
+.art .mask-window{border-radius:calc(var(--b-r)*1.6px)}
+.art .glass{background:color-mix(in srgb,var(--b-bg) 55%, transparent);backdrop-filter:blur(calc(var(--u)*2px));
+  border:1px solid color-mix(in srgb,var(--b-fg) 18%, transparent);border-radius:calc(var(--b-r)*1.4px)}
+.art .ph{display:grid;place-items:center;width:100%;height:100%;
+  background:repeating-linear-gradient(45deg,color-mix(in srgb,var(--b-fg) 8%,transparent) 0 2px,transparent 2px 14px),color-mix(in srgb,var(--b-p1) 30%,var(--b-bg));
+  color:color-mix(in srgb,var(--b-fg) 45%,transparent);font-family:var(--fm,var(--fb));font-size:calc(var(--u)*2.2px);letter-spacing:.15em}
+.art .bgimg{position:absolute;inset:0}
+.art .bgimg img{width:100%;height:100%;object-fit:cover}
+.art .bgimg .veil{position:absolute;inset:0}
+
+/* ---------- EFEITOS (fx registry aplica estas classes) ---------- */
+.art .fx-grain{position:absolute;inset:0;pointer-events:none;opacity:.5;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E")}
+.art .fx-vignette{position:absolute;inset:0;pointer-events:none;background:radial-gradient(120% 120% at 50% 45%,transparent 55%,rgba(0,0,0,.45))}
+.art .fx-scanlines{position:absolute;inset:0;pointer-events:none;opacity:.18;
+  background:repeating-linear-gradient(0deg,transparent 0 calc(var(--u)*0.5px),rgba(0,0,0,.6) calc(var(--u)*0.5px) calc(var(--u)*0.62px))}
+.art .fx-frame{position:absolute;inset:calc(var(--u)*2.4px);pointer-events:none;
+  border:calc(var(--u)*0.22px) solid color-mix(in srgb,var(--b-fg) 30%,transparent);border-radius:calc(var(--b-r)*1px)}
+.art .fx-glowtop{position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(60% 40% at 50% 0%,color-mix(in srgb,var(--b-p1) 30%,transparent),transparent 70%)}
+
+/* ---------- ASSINATURA TIPOGRÁFICA ---------- */
+/* título vazado: stroke p/ tela + sombras em 4 direções p/ export raster */
+.art .tHollow{color:transparent;-webkit-text-stroke:calc(var(--u)*0.18px) var(--hc,var(--b-fg));
+  text-shadow:calc(var(--u)*0.14px) 0 var(--hc,var(--b-fg)),calc(var(--u)*-0.14px) 0 var(--hc,var(--b-fg)),
+    0 calc(var(--u)*0.14px) var(--hc,var(--b-fg)),0 calc(var(--u)*-0.14px) var(--hc,var(--b-fg))}
+.art .hl{background:var(--b-ac);color:var(--b-bg);padding:.02em .16em;
+  border-radius:calc(var(--b-r)*0.3px);-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.art .ub{background:linear-gradient(var(--b-ac),var(--b-ac)) 0 92%/100% .14em no-repeat}
+.art .vtext{writing-mode:vertical-rl;text-orientation:mixed}
+.art .sticker{background:var(--b-fg);color:var(--b-bg);border:calc(var(--u)*0.45px) solid var(--b-bg);
+  box-shadow:calc(var(--u)*0.9px) calc(var(--u)*0.9px) 0 var(--b-bg)}
+/* faixa marquee (looping) */
+@keyframes kMarquee{to{transform:translateX(-50%)}}
+.art .marq{position:absolute;left:0;right:0;overflow:hidden;white-space:nowrap}
+.art .marq .in{display:inline-flex;gap:1.1em;padding-right:1.1em;will-change:transform}
+.art.play .marq .in{animation:kMarquee var(--mdur,14s) linear infinite}
+/* duotone: imagem cinza + lavagem de gradiente da marca (export-safe, sem blend) */
+.art .duo>img{filter:grayscale(1) contrast(1.08) brightness(.96)}
+.art .duo::after{content:'';position:absolute;inset:0;opacity:.78;
+  background:linear-gradient(160deg,color-mix(in srgb,var(--b-p1) 82%,transparent),color-mix(in srgb,var(--b-p2) 62%,transparent))}
+
+/* ---------- LIQUID GLASS ---------- */
+.art .glass2{position:relative;background:linear-gradient(135deg,color-mix(in srgb,var(--b-fg) 10%,transparent),color-mix(in srgb,var(--b-fg) 3%,transparent));
+  backdrop-filter:blur(calc(var(--u)*2.6px)) saturate(1.4);-webkit-backdrop-filter:blur(calc(var(--u)*2.6px)) saturate(1.4);
+  border:1px solid color-mix(in srgb,var(--b-fg) 26%,transparent);border-radius:calc(var(--b-r)*1.5px);
+  box-shadow:inset 0 1px 0 color-mix(in srgb,var(--b-fg) 32%,transparent), 0 calc(var(--u)*2px) calc(var(--u)*6px) rgba(0,0,0,.28)}
+.art .glass2::before{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+  background:radial-gradient(120% 60% at 20% 0%,color-mix(in srgb,var(--b-fg) 14%,transparent),transparent 55%)}
+/* itens compostos (camada de composição) */
+/* modo settle: preview estático durante ajustes ao vivo — as animações
+   saltam ao estado final (preservando fill both) sem re-tocar a cada tique */
+.art.settle *{animation-duration:.001s!important;animation-delay:0s!important;animation-iteration-count:1!important}
+.art .compitem{z-index:60}
+.art.play .compitem[data-anim]{animation-delay:var(--d,.2s)}
+/* box de texto expansível: largura definida pelo usuário; o conteúdo
+   preenche a lateral e cresce para baixo em vez de cortar */
+.art .compitem.sized{max-width:96%}
+.art .compitem.sized>*{width:100%!important;max-width:100%!important;box-sizing:border-box}
+.art .compitem.sized .glass2{height:auto}
+
+</style>
+<!-- ARTCSS:END -->
+
+<script src="vendor/html-to-image.js"></script>
+<script src="vendor/mp4-muxer.js"></script>
+<script src="vendor/qrcode-generator.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+<div class="atmos" aria-hidden="true"></div>
+<div class="app">
+  <header class="glass">
+    <div class="brand">
+      <span class="sym" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 327.7 327.7"><defs><mask id="fsBulb" maskUnits="userSpaceOnUse" x="0" y="0" width="327.7" height="327.7"><rect width="327.7" height="327.7" fill="#fff"/><path d="M 101.1 101.1 C 100.2 102.1 99.3 103 98.4 104 C 97.6 105 96.7 105.9 95.9 107 C 95 108 94.2 109 93.5 110.1 C 92.7 111.1 91.9 112.2 91.2 113.3 C 90.5 114.4 89.8 115.5 89.1 116.6 C 88.4 117.7 87.8 118.9 87.2 120 C 86.5 121.2 86 122.3 85.4 123.5 C 84.8 124.7 84.3 125.9 83.8 127.1 C 83.3 128.3 82.8 129.5 82.4 130.8 C 82 132 81.5 133.3 81.2 134.5 C 80.8 135.8 80.4 137 80.1 138.3 C 79.8 139.6 79.5 140.8 79.3 142.1 C 79 143.4 78.8 144.7 78.6 146 C 78.4 147.3 78.2 148.6 78.1 149.9 C 78 151.2 77.9 152.5 77.8 153.8 C 77.8 155.1 77.7 156.4 77.7 157.7 C 77.7 159.1 77.8 160.4 77.8 161.7 C 77.9 163 78 164.3 78.1 165.6 C 78.2 166.9 78.4 168.2 78.6 169.5 C 78.8 170.8 79 172.1 79.3 173.4 C 79.5 174.6 79.8 175.9 80.1 177.2 C 80.4 178.5 80.8 179.7 81.2 181 C 81.5 182.2 82 183.5 82.4 184.7 C 82.8 185.9 83.3 187.2 83.8 188.4 C 84.3 189.6 84.8 190.8 85.4 192 C 86 193.2 86.5 194.3 87.2 195.5 C 87.8 196.6 88.4 197.8 89.1 198.9 C 89.8 200 90.5 201.1 91.2 202.2 C 91.9 203.3 92.7 204.4 93.5 205.4 C 94.2 206.5 95 207.5 95.9 208.5 C 96.7 209.5 97.6 210.5 98.4 211.5 C 99.3 212.5 100.2 213.4 101.1 214.4 C 116.2 229.4 138.2 232.6 157.7 235.5 C 161 236 164.3 236.5 167.5 237 C 173.9 238.1 179.7 240.4 185.1 243.9 C 186.3 244.7 187.5 245.3 188.8 245.9 C 190.1 246.5 191.4 246.9 192.7 247.3 C 194.1 247.6 195.5 247.9 196.9 248 C 198.3 248.1 199.7 248.1 201.1 247.9 C 202.5 247.8 203.8 247.6 205.2 247.2 C 206.5 246.8 207.9 246.4 209.1 245.8 C 210.4 245.2 211.6 244.5 212.8 243.7 C 213.9 242.9 215 242 216 241 L 241 216 C 242 215 242.9 213.9 243.7 212.8 C 244.5 211.6 245.2 210.4 245.8 209.1 C 246.3 207.9 246.8 206.6 247.2 205.2 C 247.5 203.8 247.8 202.5 247.9 201.1 C 248 199.7 248.1 198.3 247.9 196.9 C 247.8 195.5 247.6 194.1 247.3 192.8 C 246.9 191.4 246.5 190.1 245.9 188.8 C 245.3 187.5 244.7 186.3 243.9 185.2 C 240.4 179.8 238.1 173.9 237 167.5 C 236.4 164.3 236 161 235.5 157.7 C 232.6 138.2 229.4 116.2 214.4 101.1 C 213.4 100.2 212.5 99.3 211.5 98.4 C 210.5 97.5 209.6 96.7 208.5 95.9 C 207.5 95 206.5 94.2 205.4 93.4 C 204.4 92.7 203.3 91.9 202.2 91.2 C 201.1 90.5 200 89.8 198.9 89.1 C 197.8 88.4 196.6 87.8 195.5 87.2 C 194.3 86.5 193.2 86 192 85.4 C 190.8 84.8 189.6 84.3 188.4 83.8 C 187.2 83.3 185.9 82.8 184.7 82.4 C 183.5 82 182.2 81.5 181 81.2 C 179.7 80.8 178.5 80.4 177.2 80.1 C 175.9 79.8 174.6 79.5 173.4 79.3 C 172.1 79 170.8 78.8 169.5 78.6 C 168.2 78.4 166.9 78.2 165.6 78.1 C 164.3 78 163 77.9 161.7 77.8 C 160.4 77.8 159.1 77.7 157.8 77.7 C 156.4 77.7 155.1 77.8 153.8 77.8 C 152.5 77.9 151.2 78 149.9 78.1 C 148.6 78.2 147.3 78.4 146 78.6 C 144.7 78.8 143.4 79 142.1 79.3 C 140.8 79.5 139.6 79.8 138.3 80.1 C 137 80.4 135.8 80.8 134.5 81.2 C 133.3 81.5 132 82 130.8 82.4 C 129.6 82.8 128.3 83.3 127.1 83.8 C 125.9 84.3 124.7 84.8 123.5 85.4 C 122.3 86 121.2 86.5 120 87.2 C 118.9 87.8 117.7 88.4 116.6 89.1 C 115.5 89.8 114.4 90.5 113.3 91.2 C 112.2 91.9 111.1 92.7 110.1 93.4 C 109 94.2 108 95 107 95.9 C 105.9 96.7 105 97.5 104 98.4 C 103 99.3 102.1 100.2 101.1 101.1 Z M 101.1 101.1 " fill="#000"/><path d="M 253.3 217.9 L 217.9 253.3 C 217.7 253.5 217.5 253.8 217.3 254 C 217.1 254.3 216.9 254.6 216.8 254.9 C 216.7 255.2 216.6 255.5 216.5 255.8 C 216.5 256.2 216.4 256.5 216.4 256.8 C 216.4 257.1 216.5 257.5 216.5 257.8 C 216.6 258.1 216.7 258.4 216.8 258.7 C 216.9 259 217.1 259.3 217.3 259.6 C 217.5 259.9 217.7 260.1 217.9 260.4 C 218.1 260.6 218.4 260.8 218.7 261 C 218.9 261.2 219.2 261.3 219.5 261.4 C 219.8 261.6 220.1 261.7 220.5 261.7 C 220.8 261.8 221.1 261.8 221.4 261.8 C 221.8 261.8 222.1 261.8 222.4 261.7 C 222.7 261.7 223.1 261.6 223.4 261.4 C 223.7 261.3 223.9 261.2 224.2 261 C 224.5 260.8 224.7 260.6 225 260.4 L 260.4 225 C 260.6 224.7 260.8 224.5 261 224.2 C 261.2 223.9 261.3 223.7 261.4 223.4 C 261.6 223 261.7 222.7 261.7 222.4 C 261.8 222.1 261.8 221.8 261.8 221.4 C 261.8 221.1 261.8 220.8 261.7 220.5 C 261.7 220.1 261.6 219.8 261.4 219.5 C 261.3 219.2 261.2 218.9 261 218.7 C 260.8 218.4 260.6 218.1 260.4 217.9 C 260.1 217.7 259.9 217.5 259.6 217.3 C 259.3 217.1 259 216.9 258.7 216.8 C 258.4 216.7 258.1 216.6 257.8 216.5 C 257.5 216.5 257.2 216.4 256.8 216.4 C 256.5 216.4 256.2 216.5 255.8 216.5 C 255.5 216.6 255.2 216.7 254.9 216.8 C 254.6 216.9 254.3 217.1 254 217.3 C 253.8 217.5 253.5 217.7 253.3 217.9 Z M 253.3 217.9 " fill="#000"/><path d="M 267.4 232.1 L 232.1 267.4 C 231.8 267.7 231.6 267.9 231.4 268.2 C 231.2 268.5 231.1 268.8 231 269.1 C 230.8 269.4 230.8 269.7 230.7 270 C 230.6 270.3 230.6 270.6 230.6 271 C 230.6 271.3 230.6 271.6 230.7 271.9 C 230.8 272.3 230.8 272.6 231 272.9 C 231.1 273.2 231.2 273.5 231.4 273.8 C 231.6 274 231.8 274.3 232.1 274.5 C 232.3 274.7 232.5 275 232.8 275.1 C 233.1 275.3 233.4 275.5 233.7 275.6 C 234 275.7 234.3 275.8 234.6 275.9 C 234.9 275.9 235.3 276 235.6 276 C 235.9 276 236.2 275.9 236.6 275.9 C 236.9 275.8 237.2 275.7 237.5 275.6 C 237.8 275.5 238.1 275.3 238.4 275.1 C 238.6 275 238.9 274.7 239.1 274.5 L 274.5 239.1 C 274.7 238.9 275 238.6 275.1 238.4 C 275.3 238.1 275.5 237.8 275.6 237.5 C 275.7 237.2 275.8 236.9 275.9 236.6 C 275.9 236.2 276 235.9 276 235.6 C 276 235.3 275.9 234.9 275.9 234.6 C 275.8 234.3 275.7 234 275.6 233.7 C 275.5 233.4 275.3 233.1 275.1 232.8 C 275 232.5 274.7 232.3 274.5 232.1 C 274.3 231.8 274 231.6 273.8 231.4 C 273.5 231.2 273.2 231.1 272.9 231 C 272.6 230.8 272.3 230.7 272 230.7 C 271.6 230.6 271.3 230.6 271 230.6 C 270.6 230.6 270.3 230.6 270 230.7 C 269.7 230.7 269.4 230.8 269.1 231 C 268.8 231.1 268.5 231.2 268.2 231.4 C 267.9 231.6 267.7 231.8 267.4 232.1 Z M 267.4 232.1 " fill="#000"/><path d="M 274.5 253.3 L 253.3 274.5 C 253.1 274.7 252.8 275 252.7 275.3 C 252.5 275.5 252.3 275.8 252.2 276.1 C 252.1 276.4 252 276.8 251.9 277.1 C 251.9 277.4 251.8 277.7 251.8 278.1 C 251.8 278.4 251.9 278.7 251.9 279 C 252 279.3 252.1 279.7 252.2 280 C 252.3 280.3 252.5 280.6 252.7 280.8 C 252.8 281.1 253.1 281.4 253.3 281.6 C 253.5 281.8 253.8 282 254 282.2 C 254.3 282.4 254.6 282.5 254.9 282.7 C 255.2 282.8 255.5 282.9 255.8 283 C 256.2 283 256.5 283.1 256.8 283.1 C 257.2 283.1 257.5 283 257.8 283 C 258.1 282.9 258.4 282.8 258.7 282.7 C 259 282.5 259.3 282.4 259.6 282.2 C 259.9 282 260.1 281.8 260.4 281.6 L 281.6 260.4 C 281.8 260.1 282 259.9 282.2 259.6 C 282.4 259.3 282.6 259 282.7 258.7 C 282.8 258.4 282.9 258.1 283 257.8 C 283 257.5 283.1 257.1 283.1 256.8 C 283.1 256.5 283 256.2 283 255.8 C 282.9 255.5 282.8 255.2 282.7 254.9 C 282.6 254.6 282.4 254.3 282.2 254 C 282 253.8 281.8 253.5 281.6 253.3 C 281.4 253.1 281.1 252.8 280.8 252.7 C 280.6 252.5 280.3 252.3 280 252.2 C 279.7 252.1 279.4 252 279 251.9 C 278.7 251.8 278.4 251.8 278.1 251.8 C 277.7 251.8 277.4 251.8 277.1 251.9 C 276.8 252 276.4 252.1 276.1 252.2 C 275.8 252.3 275.5 252.5 275.3 252.7 C 275 252.8 274.7 253.1 274.5 253.3 Z M 274.5 253.3 " fill="#000"/></mask></defs><path d="M 166.1 0 L 161.4 0 C 72.3 0 0 72.3 0 161.5 L 0 166.2 C 0 255.3 72.3 327.6 161.5 327.6 L 326.8 327.6 C 327.3 327.6 327.6 327.2 327.6 326.8 L 327.6 161.5 C 327.6 72.3 255.3 0 166.1 0 Z M 166.1 0 " fill="#F5620F" mask="url(#fsBulb)"/></svg></span>
+      <span class="wordmark">Forj<span class="e">e</span><b>studio</b><small>design &amp; motion por sistema</small></span>
+    </div>
+    <div class="seg">
+      <button id="segDesign" class="on">Design</button>
+      <button id="segMotion">Motion</button>
+    </div>
+    <div class="grow"></div>
+    <button class="hbtn" id="btnReplay" title="repetir animação"><svg class="uic" viewBox="0 0 24 24"><path d="M3.5 12a8.5 8.5 0 1 0 2.5-6L3.5 8.5"/><path d="M3.5 3.5v5h5"/></svg> Replay</button>
+    <button class="hbtn" id="btnRandom" title="nova variação determinística"><svg class="uic" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="9.2" cy="9.2" r="1.1"/><circle cx="14.8" cy="14.8" r="1.1"/><circle cx="14.8" cy="9.2" r="1.1"/><circle cx="9.2" cy="14.8" r="1.1"/></svg> Variar</button>
+    <div class="dd" id="ddExport">
+      <button class="hbtn pri" id="btnExpMenu"><svg class="uic" viewBox="0 0 24 24"><path d="M12 4v10.5"/><path d="M7.5 11l4.5 4.5L16.5 11"/><path d="M5 19.5h14"/></svg> Exportar <svg class="uic chev" viewBox="0 0 24 24" style="width:12px;height:12px"><path d="M6 9.5l6 6 6-6"/></svg></button>
+      <div class="ddmenu" hidden>
+        <div class="ddlbl">Imagem</div>
+        <button class="dditem" id="btnPNG"><svg class="uic" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3.5"/><circle cx="9" cy="10" r="1.7"/><path d="M4.5 17l4.3-3.8 3.4 2.9 3-2.6 4.3 3.5"/></svg> PNG <span>lote / carrossel</span></button>
+        <button class="dditem" id="btnJPG"><svg class="uic" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3.5"/><circle cx="9" cy="10" r="1.7"/><path d="M4.5 17l4.3-3.8 3.4 2.9 3-2.6 4.3 3.5"/></svg> JPG <span>com fundo sólido</span></button>
+        <button class="dditem" id="btnPNGAll"><svg class="uic" viewBox="0 0 24 24"><rect x="3" y="7" width="13" height="13" rx="2.5"/><rect x="8" y="4" width="13" height="9" rx="2.5"/></svg> PNG · todos os formatos <span>um conteúdo, todas as mídias</span></button>
+        <div id="ddFmts" hidden style="padding:6px 10px 10px;border-bottom:1px solid color-mix(in srgb,currentColor 12%,transparent)"></div>
+        <div class="ddlbl">Documento</div>
+        <button class="dditem" id="btnPDF"><svg class="uic" viewBox="0 0 24 24"><path d="M6 3.5h8l4 4v13H6z"/><path d="M14 3.5v4h4"/><path d="M9 13h6M9 16.5h6"/></svg> PDF <span>e-book · full-bleed</span></button>
+        <button class="dditem" id="btnPPTX"><svg class="uic" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="12" rx="2.5"/><path d="M12 16.5v3M8.5 19.5h7"/></svg> PPTX <span>PowerPoint · G. Slides</span></button>
+        <div class="ddlbl">Web & vídeo</div>
+        <button class="dditem" id="btnHTML"><svg class="uic" viewBox="0 0 24 24"><path d="M9 7.5L4.5 12 9 16.5M15 7.5l4.5 4.5L15 16.5"/></svg> HTML <span>página standalone</span></button>
+        <button class="dditem" id="btnVideo"><svg class="uic" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3.5"/><path d="M7.5 5v14M16.5 5v14M3 10h4.5M3 14h4.5M16.5 10H21M16.5 14H21"/></svg> MP4 <span>vídeo da timeline</span></button>
+        <div class="ddlbl">Projeto</div>
+        <button class="dditem" id="btnBackupJSON"><svg class="uic" viewBox="0 0 24 24"><path d="M12 4v10.5"/><path d="M7.5 11l4.5 4.5L16.5 11"/><path d="M5 19.5h14"/></svg> Backup <span>.json completo</span></button>
+        <label class="dditem" id="ddImpJSON"><svg class="uic" viewBox="0 0 24 24"><path d="M12 15V4.5"/><path d="M7.5 8.5L12 4l4.5 4.5"/><path d="M5 19.5h14"/></svg> Importar projeto <span>.json</span><input type="file" accept=".json,application/json" hidden></label>
+        <label class="dditem" id="ddImpPlugin"><svg class="uic" viewBox="0 0 24 24"><path d="M12 15V4.5"/><path d="M7.5 8.5L12 4l4.5 4.5"/><path d="M5 19.5h14"/></svg> Importar plugin <span>.js</span><input type="file" accept=".js,text/javascript" hidden></label>
+      </div>
+    </div>
+  </header>
+
+  <div class="body">
+    <aside>
+      <div class="tabnav">
+        <button class="tarrow" id="tabPrev" title="abas anteriores" aria-label="abas anteriores"><svg class="uic" viewBox="0 0 24 24"><path d="M14.5 5.5L8 12l6.5 6.5"/></svg></button>
+        <div class="tabs" id="tabs"></div>
+        <button class="tarrow" id="tabNext" title="próximas abas" aria-label="próximas abas"><svg class="uic" viewBox="0 0 24 24"><path d="M9.5 5.5L16 12l-6.5 6.5"/></svg></button>
+      </div>
+      <div id="panels" style="display:contents"></div>
+    </aside>
+
+    <main>
+      <div class="stagebar glass-soft">
+        <span id="fmtLabel">—</span>
+        <span class="dim" id="dimLabel"></span>
+        <span id="motionCtl" style="display:none;align-items:center;gap:10px;flex:1">
+          <button class="pbtn" id="btnPlayTL"><svg class="uic" viewBox="0 0 24 24"><path d="M8.5 5.5v13l10.5-6.5z"/></svg></button>
+          <span class="tlprog"><i id="tlProgBar"></i></span>
+        </span>
+        <span style="flex:1"></span>
+        <span id="zoomCtl" style="display:inline-flex;gap:6px;align-items:center">
+          <button class="pbtn" id="zoomOut" title="afastar a prancheta (Ctrl+scroll)"><svg class="uic" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L20.5 20.5"/><path d="M8 11h6"/></svg></button>
+          <button class="pbtn" id="zoomLabel" title="ajustar à tela (reset do zoom)">100%</button>
+          <button class="pbtn" id="zoomIn" title="aproximar a prancheta (Ctrl+scroll)"><svg class="uic" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L20.5 20.5"/><path d="M8 11h6M11 8v6"/></svg></button>
+        </span>
+        <button class="pbtn edbtn" id="btnNav" title="ver o palco em grade — selecionar, reordenar, adicionar e remover pranchetas"><svg class="uic" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="7.5" height="7.5" rx="2"/><rect x="13" y="13" width="7.5" height="7.5" rx="2"/></svg> <span id="btnNavLbl">Grade</span></button>
+        <span id="editCtl" style="display:inline-flex;gap:6px;align-items:center">
+          <button class="pbtn edbtn" id="btnEdit" title="editar elementos da arte (abre o menu de ferramentas)"><svg class="uic" viewBox="0 0 24 24"><path d="M4.5 19.5l.9-3.8L16.6 4.5a2.1 2.1 0 0 1 3 3L8.3 18.6z"/><path d="M13.8 7.3l3 3"/></svg> Editar</button>
+        </span>
+        <span id="seedLabel"></span>
+      </div>
+      <div class="edmenu" id="editTools" hidden>
+        <span class="pbtn pcount" id="edCount" style="display:none"></span>
+        <div class="emrow"><span class="emlbl">Escala</span>
+          <button class="pbtn" id="edMinus" title="diminuir (vale para todos os selecionados)">A−</button>
+          <button class="pbtn" id="edPlus" title="aumentar (vale para todos os selecionados)">A+</button></div>
+        <div class="emrow"><span class="emlbl">Animar</span>
+          <select class="pbtn psel" id="edAnim" title="animação do(s) elemento(s) selecionado(s)"></select></div>
+        <div class="emrow"><span class="emlbl">Cor</span>
+          <input type="color" id="edColor" class="pcolor" value="#FB923C" title="cor do(s) elemento(s) selecionado(s)"></div>
+        <div class="emrow"><span class="emlbl">Camada</span>
+          <button class="pbtn" id="edFront" title="trazer para a frente (topo)">⤒</button>
+          <button class="pbtn" id="edFwd" title="avançar uma camada">↑</button>
+          <button class="pbtn" id="edBwd" title="recuar uma camada">↓</button>
+          <button class="pbtn" id="edBack" title="enviar para trás (fundo)">⤓</button></div>
+        <div class="emrow"><span class="emlbl">Travas</span>
+          <button class="pbtn" id="edLock" title="travar/destravar selecionados (não movem nem escalam)"><svg class="uic" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9.5" rx="3"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></button>
+          <button class="pbtn" id="edUnlock" title="destravar tudo desta arte"><svg class="uic" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9.5" rx="3"/><path d="M8 11V8a4 4 0 0 1 7.6-1.7"/></svg></button></div>
+        <div class="emrow"><span class="emlbl">Remover</span>
+          <button class="pbtn" id="edDel" title="apagar selecionados (Delete)"><svg class="uic" viewBox="0 0 24 24"><path d="M4.5 7h15"/><path d="M9.5 7V5.5a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2V7"/><path d="M6.5 7l.9 12h9.2l.9-12"/><path d="M10.2 11v4.5M13.8 11v4.5"/></svg></button>
+          <button class="pbtn" id="edReset" title="desfazer edições desta arte"><svg class="uic" viewBox="0 0 24 24"><path d="M4.5 10h10.5a4.5 4.5 0 0 1 0 9H11"/><path d="M8.5 6l-4 4 4 4"/></svg></button></div>
+      </div>
+      <div class="stage" id="stage">
+        <div id="fitwrap"><div class="art" id="art"></div></div>
+      </div>
+      <!-- RODAPÉ DE ATALHOS · discreto, ícone + rótulo, contraste na interação -->
+      <div class="stagefooter" id="stageFooter">
+        <button class="sfi" id="sfMinus" title="diminuir a escala da seleção"><b>A−</b><span>Escala</span></button>
+        <button class="sfi" id="sfPlus" title="aumentar a escala da seleção"><b>A+</b><span>Escala</span></button>
+        <button class="sfi" id="sfColor" title="cor da seleção"><svg class="uic" viewBox="0 0 24 24"><path d="M12 3.5c4.7 0 8.5 3.4 8.5 7.6 0 2.6-2.1 4.1-4.2 4.1h-1.8c-1.2 0-2 1-1.5 2 .4.9.2 2.3-1 2.8-.6.2-1.3.3-2 .2C6 19.7 3.5 16.4 3.5 12 3.5 7.3 7.3 3.5 12 3.5z"/><circle cx="8.2" cy="10" r="1.1"/><circle cx="12" cy="7.8" r="1.1"/><circle cx="15.8" cy="10" r="1.1"/></svg><span>Cor</span><input type="color" id="sfColorInp" value="#FB923C" hidden></button>
+        <button class="sfi" id="sfFwd" title="avançar uma camada"><svg class="uic" viewBox="0 0 24 24"><path d="M12 4.5l7 4-7 4-7-4z"/><path d="M5 13.5l7 4 7-4"/></svg><span>Camada ↑</span></button>
+        <button class="sfi" id="sfBwd" title="recuar uma camada"><svg class="uic" viewBox="0 0 24 24"><path d="M12 15.5l-7-4 7-4 7 4z"/><path d="M5 15.5l7 4 7-4"/></svg><span>Camada ↓</span></button>
+        <button class="sfi" id="sfLock" title="travar/destravar seleção"><svg class="uic" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9.5" rx="3"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span>Travar</span></button>
+        <button class="sfi" id="sfUnlock" title="destravar tudo desta arte"><svg class="uic" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9.5" rx="3"/><path d="M8 11V8a4 4 0 0 1 7.6-1.7"/></svg><span>Destravar</span></button>
+        <button class="sfi" id="sfDel" title="apagar seleção"><svg class="uic" viewBox="0 0 24 24"><path d="M4.5 7h15"/><path d="M9.5 7V5.5a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2V7"/><path d="M6.5 7l.9 12h9.2l.9-12"/></svg><span>Remover</span></button>
+        <button class="sfi" id="sfUndo" title="desfazer edições desta arte"><svg class="uic" viewBox="0 0 24 24"><path d="M4.5 10h10.5a4.5 4.5 0 0 1 0 9H11"/><path d="M8.5 6l-4 4 4 4"/></svg><span>Desfazer</span></button>
+        <button class="sfi" id="sfZoomOut" title="afastar a prancheta"><svg class="uic" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L20.5 20.5"/><path d="M8 11h6"/></svg><span>Zoom −</span></button>
+        <button class="sfi" id="sfZoomIn" title="aproximar a prancheta"><svg class="uic" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L20.5 20.5"/><path d="M8 11h6M11 8v6"/></svg><span>Zoom +</span></button>
+        <button class="sfi" id="sfVary" title="folha de variações — gerar, escolher, refinar"><svg class="uic" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="9.2" cy="9.2" r="1.1"/><circle cx="14.8" cy="14.8" r="1.1"/><circle cx="14.8" cy="9.2" r="1.1"/><circle cx="9.2" cy="14.8" r="1.1"/></svg><span>Variações</span></button>
+        <button class="sfi" id="sfGrid" title="ver o palco em grade — selecionar, reordenar, adicionar e remover pranchetas"><svg class="uic" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="7.5" height="7.5" rx="2"/><rect x="13" y="13" width="7.5" height="7.5" rx="2"/></svg><span>Grade</span></button>
+      </div>
+      <!-- TELA DE GRADE · palco renderizado em grid de pranchetas -->
+      <div class="gridview" id="gridView" hidden>
+        <div class="gvhead">
+          <span class="t" id="gvTitle">PRANCHETAS</span>
+          <button class="snadd" id="gvAdd" title="adicionar">+</button>
+          <span style="flex:1"></span>
+          <button class="gvbtn" id="gvClose" title="voltar ao palco (Esc)">✕ Fechar</button>
+        </div>
+        <div class="gvgrid" id="gvGrid"></div>
+      </div>
+      <!-- FOLHA DE CONTATO · variações reais da arte atual (Eixo 1) -->
+      <div class="varsheet" id="varSheet" hidden>
+        <div class="vshead">
+          <span class="t" id="vsTitle">VARIAÇÕES</span>
+          <div class="vschips" id="vsChips"></div>
+          <span style="flex:1"></span>
+          <button class="gvbtn" id="vsSeed" title="novo seed mestre — recomeça as variações (comportamento clássico do Variar)"><svg class="uic" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="9.2" cy="9.2" r="1.1"/><circle cx="14.8" cy="14.8" r="1.1"/><circle cx="14.8" cy="9.2" r="1.1"/><circle cx="9.2" cy="14.8" r="1.1"/></svg> Seed novo</button>
+          <button class="gvbtn" id="vsMore" title="sortear outra folha de variações">↻ Mais</button>
+          <button class="gvbtn" id="vsClose" title="voltar ao palco (Esc)">✕ Fechar</button>
+        </div>
+        <div class="vsnote" id="vsNote"></div>
+        <div class="vsgrid" id="vsGrid"></div>
+      </div>
+      <a class="stagemark" href="https://forjelo.com" target="_blank" rel="noopener" data-no-i18n>Forje&nbsp;Studio <span>by Forjelo</span></a>
+      <div class="stagenav" id="stageNav" hidden>
+        <div class="snhead">
+          <span class="t" id="snTitle">SLIDES</span>
+          <button class="snadd" id="snAdd" title="adicionar">+</button>
+        </div>
+        <div class="sngrid" id="snGrid"></div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+<div class="prog" id="prog"><div class="card">
+  <div id="progTitle">Exportando…</div>
+  <div class="bar"><i id="progBar"></i></div>
+  <div class="pt" id="progTxt"></div>
+</div></div>
+
+<!-- ordem importa: state primeiro, app por último -->
+<script src="js/core/state.js"></script>
+<script src="js/core/palette.js"></script>
+<script src="js/core/composer.js"></script>
+<script src="js/core/content.js"></script>
+<script src="js/core/batch.js"></script>
+<script src="js/core/i18n.js"></script>
+<script src="js/lib/fonts.js"></script>
+<script src="js/lib/icons.js"></script>
+<script src="js/lib/anims.js"></script>
+<script src="js/lib/bgs.js"></script>
+<script src="js/lib/shapes.js"></script>
+<script src="js/lib/codes.js"></script>
+<script src="js/lib/components.js"></script>
+<script src="js/lib/components-extra.js"></script>
+<script src="js/templates/static.js"></script>
+<script src="js/templates/extra.js"></script>
+<script src="js/templates/doc.js"></script>
+<script src="js/motion/scenes.js"></script>
+<script src="js/motion/scenes-extra.js"></script>
+<script src="js/motion/player.js"></script>
+<script src="js/core/render.js"></script>
+<script src="js/core/export.js"></script>
+<script src="js/core/export-doc.js"></script>
+<script src="js/ui/editor.js"></script>
+<script src="js/ui/panels.js"></script>
+<script src="js/ui/resize.js"></script>
+<script src="js/ui/boards.js"></script>
+<script src="js/ui/variations.js"></script>
+<script src="js/core/growth.js"></script>
+<script src="js/app.js"></script>
+<!-- Forjelo · pixel de tráfego (contagem agregada, sem cookies) -->
+<script>(function(){var u="https://forjelo.com/i/fj_dChvTHpqVKiv55FJBjla5vR1a3Yd7BDh?h=1";if(navigator.sendBeacon){navigator.sendBeacon(u)}else{(new Image).src=u}})();</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+## Deploy / infra (interno, não vai pro repo público)
+*.sh
+Dockerfile
+Dockerfile.*
+studio.yml
+nginx.conf
+
+## Testes internos
+test/
+
+## OS / editor
+.DS_Store
+.vscode/README.local.md
+README.local.md

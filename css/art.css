@@ -1,0 +1,271 @@
+/* =====================================================
+   FORJE·studio — art.css
+   Tokens da marca + componentes + biblioteca de motion.
+   Este arquivo inteiro é embutido nos exports HTML.
+   ===================================================== */
+.art{position:relative;overflow:hidden;background:var(--b-bg);color:var(--b-fg);
+  font-family:var(--fb);font-size:calc(var(--u)*1px);line-height:1.2;-webkit-font-smoothing:antialiased}
+.art *{margin:0;box-sizing:border-box}
+.art .fh{font-family:var(--fh)}
+.art .fm{font-family:var(--fm)}
+.art .abs{position:absolute}
+.art img{display:block}
+.art svg.ic{width:1em;height:1em;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;display:block}
+
+/* ---------- BIBLIOTECA DE ANIMAÇÕES (entrada) ---------- */
+@keyframes kFadeUp{from{opacity:0;transform:translateY(calc(var(--u)*4px))}}
+@keyframes kFade{from{opacity:0}}
+@keyframes kClip{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes kClipUp{from{clip-path:inset(100% 0 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes kScale{from{opacity:0;transform:scale(.82)}}
+@keyframes kBlur{from{opacity:0;filter:blur(calc(var(--u)*1.6px))}}
+@keyframes kLine{from{transform:scaleX(0)}}
+@keyframes kLineY{from{transform:scaleY(0)}}
+@keyframes kLetter{from{opacity:0;transform:translateY(1.1em) rotate(5deg)}to{opacity:1;transform:none}}
+
+/* tipografia flexível (ajuste pós-S6):
+   .lw — invólucro de palavra do modo letters (quebra só nos espaços)
+   text-wrap:balance — linhas naturais redistribuídas com equilíbrio
+   .tflex — texto redimensionado pelo usuário: os <br> fixos viram
+   quebras flexíveis e o conteúdo reflui para ocupar o novo box */
+.art .lw{display:inline-block}
+.art h1{text-wrap:balance}
+.art .tflex{white-space:normal;text-wrap:balance}
+.art .tflex br{display:none}
+@keyframes kPop{0%{opacity:0;transform:scale(.4)}70%{transform:scale(1.06)}100%{opacity:1}}
+@keyframes kSlideL{from{opacity:0;transform:translateX(calc(var(--u)*6px))}}
+@keyframes kSlideR{from{opacity:0;transform:translateX(calc(var(--u)*-6px))}}
+@keyframes kRise{from{opacity:0;transform:translateY(calc(var(--u)*10px)) scale(.94)}}
+@keyframes kDraw{from{stroke-dashoffset:var(--dash,320)}to{stroke-dashoffset:0}}
+@keyframes kTrace{to{stroke-dashoffset:-260}}
+@keyframes kUnfold{from{opacity:0;transform:perspective(900px) rotateX(-86deg)}}
+@keyframes kRoll{from{opacity:0;transform:translateX(calc(var(--u)*-9px)) rotate(-150deg)}}
+@keyframes kElastic{0%{opacity:0;transform:scaleX(.2)}55%{opacity:1;transform:scaleX(1.12)}75%{transform:scaleX(.96)}100%{opacity:1}}
+/* ---------- ambientes (loop) ---------- */
+@keyframes kFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(calc(var(--u)*-1.4px))}}
+@keyframes kOrbit{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(calc(var(--u)*4px),calc(var(--u)*-3px)) scale(1.08)}66%{transform:translate(calc(var(--u)*-3px),calc(var(--u)*3px)) scale(.95)}}
+@keyframes kSpin{to{transform:rotate(360deg)}}
+@keyframes kPulse{0%,100%{opacity:.55}50%{opacity:1}}
+@keyframes kShimmer{from{background-position:200% 0}to{background-position:-200% 0}}
+/* novas entradas de elemento/componente */
+@keyframes kFlipX{from{opacity:0;transform:perspective(900px) rotateX(64deg)}}
+@keyframes kFlipY{from{opacity:0;transform:perspective(900px) rotateY(-56deg)}}
+@keyframes kBounce{0%{opacity:0;transform:translateY(calc(var(--u)*-9px))}55%{opacity:1;transform:translateY(calc(var(--u)*1.6px))}78%{transform:translateY(calc(var(--u)*-0.7px))}100%{opacity:1}}
+@keyframes kSwing{from{opacity:0;transform:rotate(-9deg)}60%{transform:rotate(3deg)}to{opacity:1}}
+@keyframes kRotIn{from{opacity:0;transform:rotate(-10deg) scale(.86)}}
+@keyframes kZoomIn{from{opacity:0;transform:scale(1.55)}}
+@keyframes kBlurUp{from{opacity:0;filter:blur(calc(var(--u)*1.8px));transform:translateY(calc(var(--u)*4px))}}
+@keyframes kSkew{from{opacity:0;transform:skewX(-14deg) translateX(calc(var(--u)*-6px))}}
+@keyframes kTrack{from{opacity:0;letter-spacing:.4em}}
+@keyframes kIris{from{clip-path:circle(0% at 50% 50%)}to{clip-path:circle(120% at 50% 50%)}}
+@keyframes kWobble{0%,100%{transform:rotate(-1.6deg)}50%{transform:rotate(1.6deg)}}
+@keyframes kBreathe{0%,100%{transform:scale(1)}50%{transform:scale(1.045)}}
+
+/* ---------- saídas de cena ---------- */
+@keyframes kExitFade{to{opacity:0}}
+@keyframes kExitWipe{to{clip-path:inset(0 0 100% 0)}}
+@keyframes kExitWipeDown{to{clip-path:inset(100% 0 0 0)}}
+@keyframes kExitWipeL{to{clip-path:inset(0 100% 0 0)}}
+@keyframes kExitWipeR{to{clip-path:inset(0 0 0 100%)}}
+@keyframes kExitZoom{to{opacity:0;transform:scale(1.1);filter:blur(calc(var(--u)*1px))}}
+@keyframes kExitZoomOut{to{opacity:0;transform:scale(.86)}}
+@keyframes kExitSlide{to{opacity:0;transform:translateY(calc(var(--u)*-6px))}}
+@keyframes kExitSlideDown{to{opacity:0;transform:translateY(calc(var(--u)*6px))}}
+@keyframes kExitSlideL{to{opacity:0;transform:translateX(calc(var(--u)*-8px))}}
+@keyframes kExitSlideR{to{opacity:0;transform:translateX(calc(var(--u)*8px))}}
+@keyframes kExitBlur{to{opacity:0;filter:blur(calc(var(--u)*2.2px))}}
+@keyframes kExitIris{from{clip-path:circle(120% at 50% 50%)}to{clip-path:circle(0% at 50% 50%)}}
+@keyframes kExitFlip{to{opacity:0;transform:perspective(1200px) rotateY(26deg) scale(.96)}}
+@keyframes kExitSpin{to{opacity:0;transform:rotate(7deg) scale(.9)}}
+
+/* ---------- entradas de cena ---------- */
+@keyframes kEnterFade{from{opacity:0}}
+@keyframes kEnterWipe{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes kEnterWipeUp{from{clip-path:inset(100% 0 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes kEnterWipeDown{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes kEnterZoom{from{opacity:0;transform:scale(.92)}}
+@keyframes kEnterZoomOut{from{opacity:0;transform:scale(1.1)}}
+@keyframes kEnterSlideL{from{opacity:0;transform:translateX(calc(var(--u)*9px))}}
+@keyframes kEnterSlideR{from{opacity:0;transform:translateX(calc(var(--u)*-9px))}}
+@keyframes kEnterSlideUp{from{opacity:0;transform:translateY(calc(var(--u)*9px))}}
+@keyframes kEnterSlideDown{from{opacity:0;transform:translateY(calc(var(--u)*-9px))}}
+@keyframes kEnterBlur{from{opacity:0;filter:blur(calc(var(--u)*2.2px))}}
+@keyframes kEnterFlip{from{opacity:0;transform:perspective(1200px) rotateY(-24deg)}}
+@keyframes kEnterSpin{from{opacity:0;transform:rotate(-7deg) scale(.94)}}
+
+/* ---------- saídas de item composto (fim da cena, no vídeo) ---------- */
+@keyframes kXFade{to{opacity:0}}
+@keyframes kXFall{to{opacity:0;transform:translateY(calc(var(--u)*5px))}}
+@keyframes kXRise{to{opacity:0;transform:translateY(calc(var(--u)*-5px))}}
+@keyframes kXShrink{to{opacity:0;transform:scale(.55)}}
+@keyframes kXBlur{to{opacity:0;filter:blur(calc(var(--u)*1.8px))}}
+@keyframes kXSlideL{to{opacity:0;transform:translateX(calc(var(--u)*-7px))}}
+@keyframes kXSlideR{to{opacity:0;transform:translateX(calc(var(--u)*7px))}}
+@keyframes kXSpin{to{opacity:0;transform:rotate(12deg) scale(.8)}}
+
+/* aplicação: elementos com data-anim animam quando .art está em .play */
+.art [data-anim]{--d:0s;--dur:.9s}
+.art.play [data-anim=fade]{animation:kFade var(--dur) ease-out var(--d) both}
+.art.play [data-anim=fade-up]{animation:kFadeUp var(--dur) cubic-bezier(.2,.8,.2,1) var(--d) both}
+.art.play [data-anim=clip]{animation:kClip var(--dur) cubic-bezier(.7,0,.2,1) var(--d) backwards}
+.art.play [data-anim=clip-up]{animation:kClipUp var(--dur) cubic-bezier(.7,0,.2,1) var(--d) backwards}
+.art.play [data-anim=scale]{animation:kScale var(--dur) cubic-bezier(.2,.8,.2,1) var(--d) both}
+.art.play [data-anim=blur]{animation:kBlur var(--dur) ease-out var(--d) both}
+.art.play [data-anim=line]{animation:kLine var(--dur) cubic-bezier(.7,0,.2,1) var(--d) both;transform-origin:left}
+.art.play [data-anim=line-y]{animation:kLineY var(--dur) cubic-bezier(.7,0,.2,1) var(--d) both;transform-origin:top}
+.art.play [data-anim=pop]{animation:kPop .7s cubic-bezier(.2,.8,.2,1) var(--d) both}
+.art.play [data-anim=slide-l]{animation:kSlideL var(--dur) cubic-bezier(.2,.8,.2,1) var(--d) both}
+.art.play [data-anim=slide-r]{animation:kSlideR var(--dur) cubic-bezier(.2,.8,.2,1) var(--d) both}
+.art.play [data-anim=rise]{animation:kRise var(--dur) cubic-bezier(.2,.8,.2,1) var(--d) both}
+.art.play [data-anim=letters] .ltr{opacity:0;animation:kLetter .6s cubic-bezier(.2,.8,.2,1) var(--ld) both}
+.art.play [data-anim=draw] :is(path,circle,rect,line,polyline,ellipse){stroke-dasharray:var(--dash,320);animation:kDraw calc(var(--dur)*1.4) cubic-bezier(.7,0,.2,1) var(--d) both}
+/* família de transformação SVG (irmãs da draw) */
+.art.play [data-anim=sketch] :is(path,circle,rect,line,polyline,ellipse){stroke-dasharray:var(--dash,320);animation:kDraw calc(var(--dur)*1.6) steps(9,end) var(--d) both}
+.art.play [data-anim=ink] :is(path,circle,rect,line,polyline,ellipse){stroke-dasharray:var(--dash,320);animation:kDraw calc(var(--dur)*1.5) cubic-bezier(.7,0,.2,1) var(--d) both}
+.art.play [data-anim=ink]{animation:kFade calc(var(--dur)*2) ease var(--d) backwards}
+.art.play [data-anim=trace] :is(path,circle,rect,line,polyline,ellipse){stroke-dasharray:7 6;animation:kTrace 2.6s linear var(--d) infinite}
+.art.play [data-anim=unfold]{animation:kUnfold var(--dur) cubic-bezier(.22,1,.36,1) var(--d) backwards;transform-origin:50% 0}
+.art.play [data-anim=roll]{animation:kRoll calc(var(--dur)*1.15) cubic-bezier(.22,1,.36,1) var(--d) backwards}
+.art.play [data-anim=elastic]{animation:kElastic calc(var(--dur)*1.2) cubic-bezier(.22,1,.36,1) var(--d) backwards;transform-origin:0 50%}
+.art.play [data-anim=float]{animation:kFloat 5s ease-in-out var(--d) infinite;animation-composition:add}
+.art.play [data-anim=orbit]{animation:kOrbit 9s ease-in-out var(--d) infinite;animation-composition:add}
+.art.play [data-anim=spin]{animation:kSpin 24s linear infinite;animation-composition:add}
+.art.play [data-anim=pulse]{animation:kPulse 3s ease-in-out var(--d) infinite}
+.art.play [data-anim=flip-x]{animation:kFlipX var(--dur) cubic-bezier(.2,.8,.2,1) var(--d) both;transform-origin:50% 100%}
+.art.play [data-anim=flip-y]{animation:kFlipY var(--dur) cubic-bezier(.2,.8,.2,1) var(--d) both}
+.art.play [data-anim=bounce]{animation:kBounce calc(var(--dur)*1.1) cubic-bezier(.2,.8,.2,1) var(--d) both}
+.art.play [data-anim=swing]{animation:kSwing var(--dur) cubic-bezier(.2,.8,.2,1) var(--d) both;transform-origin:50% 0}
+.art.play [data-anim=rotate]{animation:kRotIn var(--dur) cubic-bezier(.2,.8,.2,1) var(--d) both}
+.art.play [data-anim=zoom-in]{animation:kZoomIn var(--dur) cubic-bezier(.2,.8,.2,1) var(--d) both}
+.art.play [data-anim=blur-up]{animation:kBlurUp var(--dur) ease-out var(--d) both}
+.art.play [data-anim=skew]{animation:kSkew var(--dur) cubic-bezier(.2,.8,.2,1) var(--d) both}
+.art.play [data-anim=tracking]{animation:kTrack calc(var(--dur)*1.3) ease-out var(--d) both}
+.art.play [data-anim=iris]{animation:kIris var(--dur) cubic-bezier(.7,0,.2,1) var(--d) backwards}
+.art.play [data-anim=type]{animation:kClip calc(var(--dur)*1.7) steps(20,end) var(--d) backwards}
+.art.play [data-anim=wobble]{animation:kWobble 4s ease-in-out var(--d) infinite;animation-composition:add}
+.art.play [data-anim=breathe]{animation:kBreathe 4.5s ease-in-out var(--d) infinite;animation-composition:add}
+@media (prefers-reduced-motion:reduce){
+  .art.play [data-anim]{animation:none!important}
+  .art.play [data-anim=letters] .ltr{opacity:1;animation:none!important}
+}
+
+/* ---------- camadas de cena (motion composer) ---------- */
+.art .scenelayer{position:absolute;inset:0}
+/* entrada da cena (classe enter-* aplicada ao montar a camada) */
+.art.play .scenelayer.enter-fade{animation:kEnterFade var(--edur,.55s) ease-out both}
+.art.play .scenelayer.enter-wipe{animation:kEnterWipe var(--edur,.55s) cubic-bezier(.7,0,.2,1) both}
+.art.play .scenelayer.enter-wipe-up{animation:kEnterWipeUp var(--edur,.55s) cubic-bezier(.7,0,.2,1) both}
+.art.play .scenelayer.enter-wipe-down{animation:kEnterWipeDown var(--edur,.55s) cubic-bezier(.7,0,.2,1) both}
+.art.play .scenelayer.enter-zoom{animation:kEnterZoom var(--edur,.55s) cubic-bezier(.2,.8,.2,1) both}
+.art.play .scenelayer.enter-zoom-out{animation:kEnterZoomOut var(--edur,.55s) cubic-bezier(.2,.8,.2,1) both}
+.art.play .scenelayer.enter-slide-l{animation:kEnterSlideL var(--edur,.55s) cubic-bezier(.2,.8,.2,1) both}
+.art.play .scenelayer.enter-slide-r{animation:kEnterSlideR var(--edur,.55s) cubic-bezier(.2,.8,.2,1) both}
+.art.play .scenelayer.enter-slide-up{animation:kEnterSlideUp var(--edur,.55s) cubic-bezier(.2,.8,.2,1) both}
+.art.play .scenelayer.enter-slide-down{animation:kEnterSlideDown var(--edur,.55s) cubic-bezier(.2,.8,.2,1) both}
+.art.play .scenelayer.enter-blur{animation:kEnterBlur var(--edur,.55s) ease-out both}
+.art.play .scenelayer.enter-iris{animation:kIris var(--edur,.6s) cubic-bezier(.7,0,.2,1) both}
+.art.play .scenelayer.enter-flip{animation:kEnterFlip var(--edur,.6s) cubic-bezier(.2,.8,.2,1) both}
+.art.play .scenelayer.enter-spin{animation:kEnterSpin var(--edur,.55s) cubic-bezier(.2,.8,.2,1) both}
+/* saída da cena — mesma especificidade da entrada e declarada DEPOIS: sempre vence */
+.art.play .scenelayer.exit-fade{animation:kExitFade var(--xdur,.45s) ease both}
+.art.play .scenelayer.exit-wipe{animation:kExitWipe var(--xdur,.45s) cubic-bezier(.7,0,.2,1) both}
+.art.play .scenelayer.exit-wipe-down{animation:kExitWipeDown var(--xdur,.45s) cubic-bezier(.7,0,.2,1) both}
+.art.play .scenelayer.exit-wipe-l{animation:kExitWipeL var(--xdur,.45s) cubic-bezier(.7,0,.2,1) both}
+.art.play .scenelayer.exit-wipe-r{animation:kExitWipeR var(--xdur,.45s) cubic-bezier(.7,0,.2,1) both}
+.art.play .scenelayer.exit-zoom{animation:kExitZoom var(--xdur,.45s) ease both}
+.art.play .scenelayer.exit-zoom-out{animation:kExitZoomOut var(--xdur,.45s) ease both}
+.art.play .scenelayer.exit-slide{animation:kExitSlide var(--xdur,.45s) ease both}
+.art.play .scenelayer.exit-slide-down{animation:kExitSlideDown var(--xdur,.45s) ease both}
+.art.play .scenelayer.exit-slide-l{animation:kExitSlideL var(--xdur,.45s) ease both}
+.art.play .scenelayer.exit-slide-r{animation:kExitSlideR var(--xdur,.45s) ease both}
+.art.play .scenelayer.exit-blur{animation:kExitBlur var(--xdur,.45s) ease both}
+.art.play .scenelayer.exit-iris{animation:kExitIris var(--xdur,.5s) cubic-bezier(.7,0,.2,1) both}
+.art.play .scenelayer.exit-flip{animation:kExitFlip var(--xdur,.5s) ease both}
+.art.play .scenelayer.exit-spin{animation:kExitSpin var(--xdur,.45s) ease both}
+/* saída individual de item composto quando a cena entra em .exiting */
+.art.play .scenelayer.exiting .compitem[data-xanim=fade]{animation:kXFade .45s ease both}
+.art.play .scenelayer.exiting .compitem[data-xanim=fall]{animation:kXFall .45s ease both}
+.art.play .scenelayer.exiting .compitem[data-xanim=rise]{animation:kXRise .45s ease both}
+.art.play .scenelayer.exiting .compitem[data-xanim=shrink]{animation:kXShrink .45s cubic-bezier(.6,0,.8,.4) both}
+.art.play .scenelayer.exiting .compitem[data-xanim=blur]{animation:kXBlur .45s ease both}
+.art.play .scenelayer.exiting .compitem[data-xanim=slide-l]{animation:kXSlideL .45s ease both}
+.art.play .scenelayer.exiting .compitem[data-xanim=slide-r]{animation:kXSlideR .45s ease both}
+.art.play .scenelayer.exiting .compitem[data-xanim=spin]{animation:kXSpin .45s ease both}
+
+/* ---------- COMPONENTES REUTILIZÁVEIS ---------- */
+.art .kicker{font-family:var(--fm,var(--fb));font-size:calc(var(--u)*2.4px);letter-spacing:.22em;text-transform:uppercase;font-weight:600;opacity:.92}
+.art .bar{height:calc(var(--u)*1.1px);background:var(--b-ac);border-radius:99px}
+.art .cta{display:inline-flex;align-items:center;gap:.5em;background:var(--b-ac);color:var(--b-bg);
+  font-weight:800;font-size:calc(var(--u)*2.9px);padding:.75em 1.5em;border-radius:calc(var(--b-r)*1px)}
+.art .handle{font-family:var(--fm,var(--fb));font-size:calc(var(--u)*2.2px);opacity:.75;letter-spacing:.06em}
+.art .logo{height:calc(var(--u)*6px);width:auto;object-fit:contain}
+.art .logotype{font-family:var(--fh);font-weight:800;font-size:calc(var(--u)*3.4px);letter-spacing:.02em}
+.art .counter{font-family:var(--fm,var(--fb));font-size:calc(var(--u)*2.2px);opacity:.7;letter-spacing:.1em}
+.art .iconbox{display:grid;place-items:center;background:color-mix(in srgb,var(--b-ac) 16%,transparent);
+  color:var(--b-ac);border:calc(var(--u)*0.22px) solid color-mix(in srgb,var(--b-ac) 45%,transparent);
+  border-radius:calc(var(--b-r)*1px)}
+.art .imgw{position:relative;overflow:hidden}
+.art .imgw>img{width:100%;height:100%;object-fit:cover}
+.art .mask-circle{border-radius:50%}
+.art .mask-blob{clip-path:polygon(var(--blob,50% 0%, 84% 12%, 100% 43%, 92% 78%, 62% 100%, 27% 96%, 4% 72%, 0% 38%, 18% 9%))}
+.art .mask-arch{border-radius:50% 50% calc(var(--b-r)*1px) calc(var(--b-r)*1px) / 38% 38% calc(var(--b-r)*1px) calc(var(--b-r)*1px)}
+.art .mask-window{border-radius:calc(var(--b-r)*1.6px)}
+.art .glass{background:color-mix(in srgb,var(--b-bg) 55%, transparent);backdrop-filter:blur(calc(var(--u)*2px));
+  border:1px solid color-mix(in srgb,var(--b-fg) 18%, transparent);border-radius:calc(var(--b-r)*1.4px)}
+.art .ph{display:grid;place-items:center;width:100%;height:100%;
+  background:repeating-linear-gradient(45deg,color-mix(in srgb,var(--b-fg) 8%,transparent) 0 2px,transparent 2px 14px),color-mix(in srgb,var(--b-p1) 30%,var(--b-bg));
+  color:color-mix(in srgb,var(--b-fg) 45%,transparent);font-family:var(--fm,var(--fb));font-size:calc(var(--u)*2.2px);letter-spacing:.15em}
+.art .bgimg{position:absolute;inset:0}
+.art .bgimg img{width:100%;height:100%;object-fit:cover}
+.art .bgimg .veil{position:absolute;inset:0}
+
+/* ---------- EFEITOS (fx registry aplica estas classes) ---------- */
+.art .fx-grain{position:absolute;inset:0;pointer-events:none;opacity:.5;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E")}
+.art .fx-vignette{position:absolute;inset:0;pointer-events:none;background:radial-gradient(120% 120% at 50% 45%,transparent 55%,rgba(0,0,0,.45))}
+.art .fx-scanlines{position:absolute;inset:0;pointer-events:none;opacity:.18;
+  background:repeating-linear-gradient(0deg,transparent 0 calc(var(--u)*0.5px),rgba(0,0,0,.6) calc(var(--u)*0.5px) calc(var(--u)*0.62px))}
+.art .fx-frame{position:absolute;inset:calc(var(--u)*2.4px);pointer-events:none;
+  border:calc(var(--u)*0.22px) solid color-mix(in srgb,var(--b-fg) 30%,transparent);border-radius:calc(var(--b-r)*1px)}
+.art .fx-glowtop{position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(60% 40% at 50% 0%,color-mix(in srgb,var(--b-p1) 30%,transparent),transparent 70%)}
+
+/* ---------- ASSINATURA TIPOGRÁFICA ---------- */
+/* título vazado: stroke p/ tela + sombras em 4 direções p/ export raster */
+.art .tHollow{color:transparent;-webkit-text-stroke:calc(var(--u)*0.18px) var(--hc,var(--b-fg));
+  text-shadow:calc(var(--u)*0.14px) 0 var(--hc,var(--b-fg)),calc(var(--u)*-0.14px) 0 var(--hc,var(--b-fg)),
+    0 calc(var(--u)*0.14px) var(--hc,var(--b-fg)),0 calc(var(--u)*-0.14px) var(--hc,var(--b-fg))}
+.art .hl{background:var(--b-ac);color:var(--b-bg);padding:.02em .16em;
+  border-radius:calc(var(--b-r)*0.3px);-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.art .ub{background:linear-gradient(var(--b-ac),var(--b-ac)) 0 92%/100% .14em no-repeat}
+.art .vtext{writing-mode:vertical-rl;text-orientation:mixed}
+.art .sticker{background:var(--b-fg);color:var(--b-bg);border:calc(var(--u)*0.45px) solid var(--b-bg);
+  box-shadow:calc(var(--u)*0.9px) calc(var(--u)*0.9px) 0 var(--b-bg)}
+/* faixa marquee (looping) */
+@keyframes kMarquee{to{transform:translateX(-50%)}}
+.art .marq{position:absolute;left:0;right:0;overflow:hidden;white-space:nowrap}
+.art .marq .in{display:inline-flex;gap:1.1em;padding-right:1.1em;will-change:transform}
+.art.play .marq .in{animation:kMarquee var(--mdur,14s) linear infinite}
+/* duotone: imagem cinza + lavagem de gradiente da marca (export-safe, sem blend) */
+.art .duo>img{filter:grayscale(1) contrast(1.08) brightness(.96)}
+.art .duo::after{content:'';position:absolute;inset:0;opacity:.78;
+  background:linear-gradient(160deg,color-mix(in srgb,var(--b-p1) 82%,transparent),color-mix(in srgb,var(--b-p2) 62%,transparent))}
+
+/* ---------- LIQUID GLASS ---------- */
+.art .glass2{position:relative;background:linear-gradient(135deg,color-mix(in srgb,var(--b-fg) 10%,transparent),color-mix(in srgb,var(--b-fg) 3%,transparent));
+  backdrop-filter:blur(calc(var(--u)*2.6px)) saturate(1.4);-webkit-backdrop-filter:blur(calc(var(--u)*2.6px)) saturate(1.4);
+  border:1px solid color-mix(in srgb,var(--b-fg) 26%,transparent);border-radius:calc(var(--b-r)*1.5px);
+  box-shadow:inset 0 1px 0 color-mix(in srgb,var(--b-fg) 32%,transparent), 0 calc(var(--u)*2px) calc(var(--u)*6px) rgba(0,0,0,.28)}
+.art .glass2::before{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+  background:radial-gradient(120% 60% at 20% 0%,color-mix(in srgb,var(--b-fg) 14%,transparent),transparent 55%)}
+/* itens compostos (camada de composição) */
+/* modo settle: preview estático durante ajustes ao vivo — as animações
+   saltam ao estado final (preservando fill both) sem re-tocar a cada tique */
+.art.settle *{animation-duration:.001s!important;animation-delay:0s!important;animation-iteration-count:1!important}
+.art .compitem{z-index:60}
+.art.play .compitem[data-anim]{animation-delay:var(--d,.2s)}
+/* box de texto expansível: largura definida pelo usuário; o conteúdo
+   preenche a lateral e cresce para baixo em vez de cortar */
+.art .compitem.sized{max-width:96%}
+.art .compitem.sized>*{width:100%!important;max-width:100%!important;box-sizing:border-box}
+.art .compitem.sized .glass2{height:auto}
